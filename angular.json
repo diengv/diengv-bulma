@@ -7,7 +7,26 @@
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        },
+        "@schematics/angular:class": {
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
         }
       },
       "root": "",
@@ -25,10 +44,26 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": ".htaccess",
+                "input": "src",
+                "output": "/"
+              }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/resources/scss/icon/icons.scss",
+              {
+                "input": "src/resources/scss/bulma-light.scss",
+                "bundleName": "bulma-light",
+                "inject": false
+              },
+              {
+                "input": "src/resources/scss/bulma-dark.scss",
+                "bundleName": "bulma-dark",
+                "inject": false
+              }
             ],
             "scripts": []
           },

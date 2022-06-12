@@ -1,0 +1,21 @@
+.app-sidebar-menu {
+  position: relative;
+
+  .menu-btn-toggle {
+    position: absolute;
+    transform: translateX(50%);
+  }
+
+  .menu-container {
+    height: 100vh;
+    max-height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid darkgray;
+
+    .menu {
+      a {
+        border-radius: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,251 @@
+$icons-font: "icons";
+
+@font-face {
+    font-family: $icons-font;
+    src: url("./icons.ttf?f88a50d6cd26002f90d4cf0b28d1f02d") format("truetype"),
+url("./icons.woff?f88a50d6cd26002f90d4cf0b28d1f02d") format("woff"),
+url("./icons.woff2?f88a50d6cd26002f90d4cf0b28d1f02d") format("woff2");
+}
+
+.app-icon{
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    display: inline-block;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-middle{
+    .app-icon{
+        vertical-align: middle;
+        padding-bottom: 5px;
+    }
+}
+
+$icons-map: (
+    "angle-double-left": "\f101",
+    "angle-double-right": "\f102",
+    "angle-down": "\f103",
+    "angle-left": "\f104",
+    "angle-right": "\f105",
+    "angle-up": "\f106",
+    "arrow_down": "\f107",
+    "arrow-alt-to-bottom": "\f108",
+    "arrow-alt-to-top": "\f109",
+    "arrow-circle-left": "\f10a",
+    "arrow-circle-right": "\f10b",
+    "bars": "\f10c",
+    "caret-down-svgrepo-com": "\f10d",
+    "caret-down": "\f10e",
+    "caret-up-svgrepo-com": "\f10f",
+    "caret-up": "\f110",
+    "check": "\f111",
+    "chevron-circle-right": "\f112",
+    "comment-alt": "\f113",
+    "edit": "\f114",
+    "exclamation-triangle": "\f115",
+    "facebook": "\f116",
+    "filter": "\f117",
+    "heart-circle": "\f118",
+    "heart": "\f119",
+    "history": "\f11a",
+    "home-lg-alt": "\f11b",
+    "image": "\f11c",
+    "male": "\f11d",
+    "map-marker-alt": "\f11e",
+    "map-marker": "\f11f",
+    "minus": "\f120",
+    "music": "\f121",
+    "pen-nib": "\f122",
+    "pencil-alt": "\f123",
+    "percent": "\f124",
+    "percentage": "\f125",
+    "plus": "\f126",
+    "repeat": "\f127",
+    "school": "\f128",
+    "search-btn": "\f129",
+    "search-minus": "\f12a",
+    "search-plus": "\f12b",
+    "search": "\f12c",
+    "star-fill": "\f12d",
+    "star-half-alt": "\f12e",
+    "star": "\f12f",
+    "sync": "\f130",
+    "thumbs-up": "\f131",
+    "thumbtack": "\f132",
+    "times": "\f133",
+    "trash-alt": "\f134",
+    "undo": "\f135",
+    "upload": "\f136",
+    "user": "\f137",
+);
+
+.app-icon.icon-angle-double-left:before {
+    content: map-get($icons-map, "angle-double-left");
+}
+.app-icon.icon-angle-double-right:before {
+    content: map-get($icons-map, "angle-double-right");
+}
+.app-icon.icon-angle-down:before {
+    content: map-get($icons-map, "angle-down");
+}
+.app-icon.icon-angle-left:before {
+    content: map-get($icons-map, "angle-left");
+}
+.app-icon.icon-angle-right:before {
+    content: map-get($icons-map, "angle-right");
+}
+.app-icon.icon-angle-up:before {
+    content: map-get($icons-map, "angle-up");
+}
+.app-icon.icon-arrow_down:before {
+    content: map-get($icons-map, "arrow_down");
+}
+.app-icon.icon-arrow-alt-to-bottom:before {
+    content: map-get($icons-map, "arrow-alt-to-bottom");
+}
+.app-icon.icon-arrow-alt-to-top:before {
+    content: map-get($icons-map, "arrow-alt-to-top");
+}
+.app-icon.icon-arrow-circle-left:before {
+    content: map-get($icons-map, "arrow-circle-left");
+}
+.app-icon.icon-arrow-circle-right:before {
+    content: map-get($icons-map, "arrow-circle-right");
+}
+.app-icon.icon-bars:before {
+    content: map-get($icons-map, "bars");
+}
+.app-icon.icon-caret-down-svgrepo-com:before {
+    content: map-get($icons-map, "caret-down-svgrepo-com");
+}
+.app-icon.icon-caret-down:before {
+    content: map-get($icons-map, "caret-down");
+}
+.app-icon.icon-caret-up-svgrepo-com:before {
+    content: map-get($icons-map, "caret-up-svgrepo-com");
+}
+.app-icon.icon-caret-up:before {
+    content: map-get($icons-map, "caret-up");
+}
+.app-icon.icon-check:before {
+    content: map-get($icons-map, "check");
+}
+.app-icon.icon-chevron-circle-right:before {
+    content: map-get($icons-map, "chevron-circle-right");
+}
+.app-icon.icon-comment-alt:before {
+    content: map-get($icons-map, "comment-alt");
+}
+.app-icon.icon-edit:before {
+    content: map-get($icons-map, "edit");
+}
+.app-icon.icon-exclamation-triangle:before {
+    content: map-get($icons-map, "exclamation-triangle");
+}
+.app-icon.icon-facebook:before {
+    content: map-get($icons-map, "facebook");
+}
+.app-icon.icon-filter:before {
+    content: map-get($icons-map, "filter");
+}
+.app-icon.icon-heart-circle:before {
+    content: map-get($icons-map, "heart-circle");
+}
+.app-icon.icon-heart:before {
+    content: map-get($icons-map, "heart");
+}
+.app-icon.icon-history:before {
+    content: map-get($icons-map, "history");
+}
+.app-icon.icon-home-lg-alt:before {
+    content: map-get($icons-map, "home-lg-alt");
+}
+.app-icon.icon-image:before {
+    content: map-get($icons-map, "image");
+}
+.app-icon.icon-male:before {
+    content: map-get($icons-map, "male");
+}
+.app-icon.icon-map-marker-alt:before {
+    content: map-get($icons-map, "map-marker-alt");
+}
+.app-icon.icon-map-marker:before {
+    content: map-get($icons-map, "map-marker");
+}
+.app-icon.icon-minus:before {
+    content: map-get($icons-map, "minus");
+}
+.app-icon.icon-music:before {
+    content: map-get($icons-map, "music");
+}
+.app-icon.icon-pen-nib:before {
+    content: map-get($icons-map, "pen-nib");
+}
+.app-icon.icon-pencil-alt:before {
+    content: map-get($icons-map, "pencil-alt");
+}
+.app-icon.icon-percent:before {
+    content: map-get($icons-map, "percent");
+}
+.app-icon.icon-percentage:before {
+    content: map-get($icons-map, "percentage");
+}
+.app-icon.icon-plus:before {
+    content: map-get($icons-map, "plus");
+}
+.app-icon.icon-repeat:before {
+    content: map-get($icons-map, "repeat");
+}
+.app-icon.icon-school:before {
+    content: map-get($icons-map, "school");
+}
+.app-icon.icon-search-btn:before {
+    content: map-get($icons-map, "search-btn");
+}
+.app-icon.icon-search-minus:before {
+    content: map-get($icons-map, "search-minus");
+}
+.app-icon.icon-search-plus:before {
+    content: map-get($icons-map, "search-plus");
+}
+.app-icon.icon-search:before {
+    content: map-get($icons-map, "search");
+}
+.app-icon.icon-star-fill:before {
+    content: map-get($icons-map, "star-fill");
+}
+.app-icon.icon-star-half-alt:before {
+    content: map-get($icons-map, "star-half-alt");
+}
+.app-icon.icon-star:before {
+    content: map-get($icons-map, "star");
+}
+.app-icon.icon-sync:before {
+    content: map-get($icons-map, "sync");
+}
+.app-icon.icon-thumbs-up:before {
+    content: map-get($icons-map, "thumbs-up");
+}
+.app-icon.icon-thumbtack:before {
+    content: map-get($icons-map, "thumbtack");
+}
+.app-icon.icon-times:before {
+    content: map-get($icons-map, "times");
+}
+.app-icon.icon-trash-alt:before {
+    content: map-get($icons-map, "trash-alt");
+}
+.app-icon.icon-undo:before {
+    content: map-get($icons-map, "undo");
+}
+.app-icon.icon-upload:before {
+    content: map-get($icons-map, "upload");
+}
+.app-icon.icon-user:before {
+    content: map-get($icons-map, "user");
+}
